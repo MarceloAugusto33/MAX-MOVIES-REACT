@@ -1,9 +1,13 @@
+import { Outlet } from "react-router-dom"
+import Navbar from "./components/Navbar"
 
-
-export default function App() {
+function App() {
     return(
         <div className="App">
-            <h2>MAX MOVIES</h2>
+            <Navbar />
+            <Outlet />
         </div>
     )
 }
+
+export default App
