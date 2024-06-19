@@ -8,19 +8,17 @@ export default function Navbar() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-
-        if(!search) return
-
+        if (!search) return
         navigate(`/search?q=${search}`);
         setSearch("");
     }
 
     return (
-        <nav className="bg-gray-900 p-4 flex flex-col md:flex-row items-center justify-between">
+        <nav className="bg-gray-900 p-4 flex flex-col md:flex-row items-center justify-between sticky left-0 top-0 z-10">
             <h2 className="text-orange-400 text-2xl font-bold mb-4 md:mb-0">
                 <Link to="/" className="flex items-center">
                     <BiCameraMovie className="mr-2" />
-                    MAX MOVIES
+                    CineHub
                 </Link>
             </h2>
             <form onSubmit={handleSubmit} className="flex items-center w-full md:w-auto gap-3">

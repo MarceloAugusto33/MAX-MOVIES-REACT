@@ -9,7 +9,6 @@ import { Link } from "react-router-dom";
 const imageURL = import.meta.env.VITE_IMG
 
 export const SlideFilmes = ({ movies }) => {
-
     return (
         <Swiper
             modules={[FreeMode, Navigation]}
