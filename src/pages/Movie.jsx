@@ -36,7 +36,7 @@ const Movie = () => {
             ) : (
                 <main className="md:grid md:grid-cols-2 gap-2 md:p-20 text-xl p-4">
                     <img
-                        src={imgUrl + movie.poster_path}
+                        src={movie.poster_path ? imgUrl + movie.poster_path : "https://ih1.redbubble.net/image.1861329778.2941/st,small,845x845-pad,1000x1000,f8f8f8.jpg"}
                         alt="Poster do filme"
                         className="md:col-span-1 m-auto max-h-[600px]" />
 
